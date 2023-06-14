@@ -12,7 +12,7 @@ console.log('console 1');
 console.warn('console 2');
 // console.error(new Error('console 3'));
 
-console.log(process)
+// console.log(process)
 
 for (let i = 2; i < process.argv.length; i++)
 {
