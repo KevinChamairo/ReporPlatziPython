@@ -36,9 +36,9 @@ ordenarProducto('lapiz')
 
 async function realizarPedido(producto) {
     try{
-        const respuesta = ordenarProducto(producto);
+        const respuesta = await ordenarProducto(producto);
         console.log('Respuesta recibida');
-        const respuestaProcesada = procesarPedido(respuesta);
+        const respuestaProcesada = await procesarPedido(respuesta);
         console.log(respuestaProcesada)
     }catch(error){
         console.log(error);
